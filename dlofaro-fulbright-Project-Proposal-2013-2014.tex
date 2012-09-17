@@ -2,7 +2,7 @@
 \usepackage{times}
 \usepackage[margin=1.0in]{geometry}
 \pagestyle{empty}		% remove page numbering
-\linespread{1}
+\linespread{0.97}
 
 \begin{document}
 \begin{center}
@@ -17,76 +17,84 @@ Mobile Manipulator Unmanned Aerial Vehicles for Mine Removal\\
 
 %\normalsize
 Unmanned aerial vehicles (UAV) are at the forfrunt of robotics research in the U.S. as well as in other countries such as Croatia.  
-The most recent examples of traditional UAVs (fixed-winged) are the U.S. military's Preditor and MAKO drones.  
-The University of Pensivania's (UPenn) General Robotics, Automation, Sensing and Perception (GRASP) Lab was amoung the first use the small, agile quadroptors (four rotor helicopters) to create fast, autonomous and percision flying UAVs.  
-All of the latter UAVs have no world manipulation capibilities (with the exception  of the Preditor drone when it shoots something with its mistle payload).  
-Adding a single degree of freedom (one joint) grasper (or manipulator) to the UAV to allow for easy payload pickup and drop off has been shown viabal through the efforst of Yale and UPenn (2010-2011). 
-Though these manipulators are able to attach themselves to an object they are fixed to the UAV and thus relying souly on the UAV to position the manipulator.  
+The most recent examples of traditional UAVs are the U.S. military's Preditor and MAKO fixed-winged drones.  
+The University of Pensivania's (UPenn) General Robotics, Automation, Sensing and Perception (GRASP) Lab was amoung the first use the small and agile quadroptors (four rotor helicopters) to create fast, autonomous and percision flying UAVs.  
+All of the latter UAVs have no dectrus manipulation capibilities .
+In other words none of the latter are able to pick up a payload and drop it off autonomously in another location.
+Adding a single degree of freedom (one joint) grasper (manipulator) to the UAV to allow for easy payload pickup and drop off has been shown viabal through the efforst of Yale and UPenn (2010-2012). 
+Though these manipulators are able to attach themselves to an object they are fixed to the chasis of the UAV.
+Thus they rely souly on the UAV to position the manipulator in free space.  
 This is the current state of the art, however it does not allow for dectrus manipulation.  
-The next logical step is the creation of UAVs with the ability to manipulate the enviroment indipendent of overall movement of the craft (i.e. put multi joint arms on the UAV).  
-The collaberation between the Drexel Autonomous Systems Lab (DASL) at Drexel University in Philadelphia, PA (the lab in which I research) and the Laboratory for Robotics and Intelligent Control Systems (LARICS) at the University of Zagreb in Croatia has resulted in the only bleeding edge research with adding dectrus arms (multi joint) to a UAV for world manipulation.  DASL and LARICS has dubbed UAVs with dextrus arms Mobile Manipulating UAVs or MM-UAVs. 
-MM-UAVs are well suited for applications such as diffusing Improvised Explosive Devices (IED - U.S. priority), disarming land-minds (Croatian prority), collecting sample of materials, performing mantance on a bridges or buildings, or clearing rubble in hazerdous areas (Korpela 2012).  
-It is a mutual understanding between Croatia and the U.S. that this is a key technology to be presuied to increase safty of each coutries population as well as become more visiable in the field of unmanned aerial vehile technologies.
+The next logical step is the creation of UAVs with the ability to manipulate the enviroment indipendent of overall movement of the craft.  
+The collaberation between the Drexel Autonomous Systems Lab (DASL) at Drexel University in Philadelphia, PA (the lab in which I research) and the Laboratory for Robotics and Intelligent Control Systems (LARICS) at the University of Zagreb in Croatia has resulted in the only bleeding edge research of adding dectrus arms (multi joint) to a UAV for world manipulation to date.  DASL and LARICS has dubbed UAVs with dextrus arms Mobile Manipulating UAVs or MM-UAVs. 
+MM-UAVs are well suited for applications such as diffusing Improvised Explosive Devices (IED - U.S. priority), disarming land-minds (Croatian prority), collecting sample of materials, performing mantance on a bridges/buildings, or clearing rubble in hazerdous areas (Korpela 2012).  
+It is a mutual understanding between Croatia and the U.S. that this is a key technology to be presuied to increase safty of each coutries population.
+In addition both countries agree that it is important to become more visiable in the blooming field of unmanned aerial vehile technologies.
 I propose to create a MM-UAV that has the dexterity to manipulate the environment via the use of attached  arms/manipulators. 
 A special focus will be put on dexterity for disarming IEDs and land-mines (key goals for the U.S. and Croatia).  
-The latter will be done in conjunction with Dr. Kovacic Zdenko and Dr. Bogdan Stjepan at the LARICS.  
+The latter will be done in conjunction with Dr. Kovacic Zdenko and Dr. Bogdan Stjepan at LARICS.  
 This will show that MM-UAVs have the ability to perform dangerous, dexterous and delicate tasks that are typically proformed by humans (a new and cutting edge portion of UAV and robotic research).
 
 %\section{Proposal}
 Adding dectrus arms to a UAV creates many chalanges; 
 System stability -  \textit{making sure it can fly};
-Effect of dynamic inertal loads due to arms - \textit{what happens when the arms move and pickup/releases things};
+Effect on the dynamics of the system due to arms - \textit{what happens when the arms move and pickup/releases objects};
 Kinimatic design -  \textit{how it is put together};
-Software/comunications/sensors -  \textit{what controls the UAV and how does it know that it is doing in the world} all need to be addressed.  
-The creation of this MM-UAV is considered a systems intergration problem.  
-I propose using parts I am already am skilled with.
-This includes the GAUI\texttrademark 500X Quadcopter, Dynamixel\texttrademark actuators, my opensoruce control software I origonally desiged for a complex full-size humanoid robot running on the Linux opperating system and stability control algerithms from my Ph.D. dissertation spisifically designed for stability preforming dectrus manipulation (extremely simular to this task except on a legged robot).  
+Software/comunications/sensors -  \textit{what controls the UAV and how does it know what it is doing in the world} all need to be addressed.  
+The creation of this MM-UAV is a systems intergration problem.  
+I propose using parts I am already am skilled with to complete this task.
+This includes the GAUI\texttrademark 500X Quadcopter, Dynamixel\texttrademark actuators, my opensoruce control software I origonally desiged for a complex full-size humanoid robot.
+(opensource Linux based) and control algerithms from my Ph.D. dissertation spisifically designed for bipedal stability while preforming dectrus manipulation (extremely simular to this task except on a legged robot).  
 Having experence with the parts, software and algrothms allows for quick development, shorter time to maturity and greater probobility to bring the project to fruition.  
-MM-UAVs are in its infancies as a technology and this givens both Croatia and the U.S. a changce to get their countries noted as the first thus this project is timely and compelling for the host country and the U.S.  
+MM-UAVs are in its infant state as a technology.
+This givens both Croatia and the U.S. a changce be noted as the first in the field.
+Thus this project is timely and compelling for the host country and the U.S.  
 In addition LARICS is procuring a 3D printer/rapid prototyper (good for construction of the parts for the arms) and has multiple GAUIs\texttrademark and other quadcopters avaliable for imediate use.  This will help in making my independent research come to throughition.
 
-My proposed timeline is split into three distinct sections, platform/algerithm development, test/redeisgn and verification.  
-The first three months will be dedicated to initial platform and algroithm development as well as getting up and running at LARICS.  
-The next three months will be dedicated to testing and redesign of the platform.  
-It is expected that multiple itterations will be done until a final design is created.  
-The final three months will be a wrapup period where high quality data will be porduced and recorded and results will be submitted for publication.  
+My proposed timeline revolves around a three tear infrustructure: platform/algerithm development, test/redeisgn and verification.  
+The first tear (month 1-3) will be dedicated to initial platform and algroithm development as well as getting up and running at LARICS.  
+The second tear (month 4-6) is dedicated to testing and redesign of the platform.  
+Movement between the first and second tear is expected until the final design is created.
+The final tear (month 7-9) will be a wrapup period where high quality data will be porduced and recorded.
+The results will be submitted for publication.  
 The highly competitive international robotic conferences IROS and ICRA will the primary targets for publication.  
 The publications will focus on the viability for IED and land mine removal.
 
 %\section{Language}
-Through my experience with working directly with members of my host lab at the NATO workshop that I orginized as well as at DASL I am confident that useful and constructive communication will be accomplished.  
-To further increase my Croation language capiability I will take advantage of the Croatian language classes available in and around the University of Zagreb. 
+Through my experience working directly with members of my host lab at the NATO workshop that I orginized, as well as at DASL, I am confident that useful and constructive communication will be accomplished dispite the language difference.  
+To further increase my Croation language capiability and comunication I will take advantage of the Croatian language classes available in and around the University of Zagreb. 
 
 %\section{Research Background}
 My experence and education is ideally suited to the compleation of this project.  
 My masters thesus focused on control systems and my Ph.D. dissertation (in progress) focusses on stability of a legged robot during manipulation using dectrus arms.  
 Currently my special skills and experence in controls allowed me to work with UAV as a consultant for U.S. UAV R\&D teams.
-My controbutions in full-size humanoid robotics shows that I am proficent in the hardware, software and electronic portions of complex control systems MM-UAVs.
+My controbutions in full-size humanoid robotics shows that I am proficent in the hardware, software, electronics and control required for the complex MM-UAV systems.
 
 
 %\section{social impact}
 Outside of lab I plan on being active in sports and exploring the culinary aspects of Croatia, both in fare and in spirits.  
 I have found that in my past travels to Korea you learn more about a culture when you eat and play with the locals.  
-This is exactly what I plan on doing.  
+This is exactly what I plan to do.  
 In addition I am an award winning amateur photographer and I plan on documenting my entire visit through still media.
+I also plan on submitting my work to well known photography magazines for publication.
 
 My hosts are continuously involved in orginizing international conferences.  
-I feel that international networking is a key aspect for professional and personal growth.
+I feel that international networking is key for professional and personal growth.
 I will help with the conferences, offereing my experences in my past workshops and conferences when needed, and in return I will have gain invaluable international networking experence.
-This is expeciailly important to be because international collaberation has also become the defacto basis for what sets me apart from other researchers in science and engineering in the U.S. 
+This is expeciailly important to me because international collaberation has also become the defacto basis for what sets me apart from other researchers in science and engineering in the U.S. 
 Thus it is crutial that I gain this experence through the Fulbright experence.
 
 
 
 
 %\section{Summary and correer}
-In summary by proforiming research at LARICS in the University of Zagreb the mutual understanding between Croatia and the U.S. will be strengthtened because both countries agree that this is a key technology to be presuied to increase safty of their citizens.
+In summary by proforiming research at LARICS in the University of Zagreb the mutual understanding between Croatia and the U.S. will be strengthtened because both countries agree that MM-UAVs are a key technology to be presuied to increase safty of their citizens.
 In addition it is a timely oppertunity for each country to become more visiable in the blooming field of unmanned arial vehicle technologies.  
 I have shown a three teared infrastructrue to complete my set goals and I have a plan of action to improve my comunications ability when in Croatia.
 Performing my reserach at LARICS will allow me to make the logical transistion from my disseretation topic to the field of MM-UAVs.  
 Because LARICS is one of two labs in the world currently working on MM-UAVs it is the ideal place for me to become  a top researcher in the field.  
 This will not only be bennificial to LARICS and DASL but also to my future correer as prosective faculty in complex control systems and robotics.
-Receiving the Fulbright to Croatia will open many doors for post-doc and faculity possitions at universities vastly push my personal and professional growth forward.
+Receiving the Fulbright to Croatia will open many doors for post-doc and faculity possitions at universities and vastly push my personal and professional growth forward.
 
 
 
